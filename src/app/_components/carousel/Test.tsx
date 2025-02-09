@@ -21,7 +21,7 @@ export function CarouselSize() {
         {Array.from({ length: 5 }).map((_, index) => (
           <CustomCarouselItem key={index}>
             <Card className="border-none">
-              <CardContent className="relative aspect-[2.5/1] p-0">
+              <CardContent className="relative h-[800px] p-0">
                 <Image
                   src="/Image.png"
                   alt="Mooncake Banner"
