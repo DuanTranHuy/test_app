@@ -1,0 +1,393 @@
+@font-face {
+  font-family: 'Legend';
+  src: url('/fonts/legend/Legend.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Regular.otf') format('opentype');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Ultra.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-XLight.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SVN-Gotham';
+  src: url('/fonts/gotham/SVN-Gotham-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+
+    .legend-36 {
+        @apply text-neutralsmine-shaft-gray-1 text-center font-['Legend'] text-[36px] font-normal leading-normal tracking-[4px] capitalize;
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+
+    .gotham-14 {
+        @apply text-neutralsdove-gray-gray-3 font-['SVN-Gotham'] text-[14px] font-[450] leading-normal;
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+
+    .gotham-14-menu {
+        @apply text-neutralsdove-gray-gray-3 text-center font-['SVN-Gotham'] text-[14px] font-normal leading-[24px];
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+
+    .legend-16 {
+        @apply text-neutralsdove-gray-gray-3 text-center font-['Legend'] text-base font-normal leading-[150%] tracking-[1px];
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+
+    .legend-24 {
+        @apply text-neutralsmine-shaft-gray-1 text-center font-['Legend'] text-2xl font-normal leading-normal tracking-[2px] uppercase;
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+
+    .gotham-16-button {
+        @apply text-primary-driftwood text-center font-['SVN-Gotham'] text-base font-[450] leading-[100%] tracking-[2px] uppercase;
+        font-feature-settings: 'liga' off, 'clig' off;
+    }
+
+    .select-item-hover {
+        @apply hover:bg-[#A68E67] hover:bg-opacity-10 transition-colors duration-200;
+    }
+}
+
+:root {
+    --backgroundalabaster: rgba(252, 252, 252, 1);
+    --backgroundmerino: rgba(249, 245, 240, 1);
+    --button: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+    --dividermercury: rgba(225, 225, 225, 1);
+    --functionaldodger-blue-link: rgba(24, 144, 255, 1);
+    --functionallima-success: rgba(82, 196, 26, 1);
+    --functionalsun-warning: rgba(250, 173, 20, 1);
+    --functionalsunset-orange-error: rgba(255, 77, 79, 1);
+    --gotham-14-book-body-font-family: "SVN-Gotham", Helvetica;
+    --gotham-14-book-body-font-size: 14px;
+    --gotham-14-book-body-font-style: normal;
+    --gotham-14-book-body-font-weight: 400;
+    --gotham-14-book-body-letter-spacing: 0px;
+    --gotham-14-book-body-line-height: 24px;
+    --gotham-14-reg-body-font-family: "SVN-Gotham", Helvetica;
+    --gotham-14-reg-body-font-size: 14px;
+    --gotham-14-reg-body-font-style: normal;
+    --gotham-14-reg-body-font-weight: 400;
+    --gotham-14-reg-body-letter-spacing: 0px;
+    --gotham-14-reg-body-line-height: 21px;
+    --gotham-16-book-body-font-family: "SVN-Gotham", Helvetica;
+    --gotham-16-book-body-font-size: 16px;
+    --gotham-16-book-body-font-style: normal;
+    --gotham-16-book-body-font-weight: 400;
+    --gotham-16-book-body-letter-spacing: 0px;
+    --gotham-16-book-body-line-height: 24px;
+    --gotham-16-book-title-font-family: "SVN-Gotham", Helvetica;
+    --gotham-16-book-title-font-size: 16px;
+    --gotham-16-book-title-font-style: normal;
+    --gotham-16-book-title-font-weight: 400;
+    --gotham-16-book-title-letter-spacing: 0px;
+    --gotham-16-book-title-line-height: normal;
+    --gotham-18-book-body-font-family: "SVN-Gotham", Helvetica;
+    --gotham-18-book-body-font-size: 18px;
+    --gotham-18-book-body-font-style: normal;
+    --gotham-18-book-body-font-weight: 400;
+    --gotham-18-book-body-letter-spacing: 0px;
+    --gotham-18-book-body-line-height: 150%;
+    --gotham-18-book-title-font-family: "SVN-Gotham", Helvetica;
+    --gotham-18-book-title-font-size: 18px;
+    --gotham-18-book-title-font-style: normal;
+    --gotham-18-book-title-font-weight: 400;
+    --gotham-18-book-title-letter-spacing: 0px;
+    --gotham-18-book-title-line-height: normal;
+    --gotham-18-reg-body-font-family: "SVN-Gotham", Helvetica;
+    --gotham-18-reg-body-font-size: 18px;
+    --gotham-18-reg-body-font-style: normal;
+    --gotham-18-reg-body-font-weight: 400;
+    --gotham-18-reg-body-letter-spacing: 0px;
+    --gotham-18-reg-body-line-height: 30px;
+    --gotham-20-book-body-font-family: "SVN-Gotham", Helvetica;
+    --gotham-20-book-body-font-size: 20px;
+    --gotham-20-book-body-font-style: normal;
+    --gotham-20-book-body-font-weight: 400;
+    --gotham-20-book-body-letter-spacing: 0px;
+    --gotham-20-book-body-line-height: 30px;
+    --gotham-20-book-title-font-family: "SVN-Gotham", Helvetica;
+    --gotham-20-book-title-font-size: 20px;
+    --gotham-20-book-title-font-style: normal;
+    --gotham-20-book-title-font-weight: 400;
+    --gotham-20-book-title-letter-spacing: 2px;
+    --gotham-20-book-title-line-height: normal;
+    --legend-16-text-24-LH-font-family: "Legend", Helvetica;
+    --legend-16-text-24-LH-font-size: 16px;
+    --legend-16-text-24-LH-font-style: normal;
+    --legend-16-text-24-LH-font-weight: 400;
+    --legend-16-text-24-LH-letter-spacing: 2px;
+    --legend-16-text-24-LH-line-height: 24px;
+    --legend-16-text-font-family: "Legend", Helvetica;
+    --legend-16-text-font-size: 16px;
+    --legend-16-text-font-style: normal;
+    --legend-16-text-font-weight: 400;
+    --legend-16-text-letter-spacing: 1px;
+    --legend-16-text-line-height: normal;
+    --legend-20-text-2px-font-family: "Legend", Helvetica;
+    --legend-20-text-2px-font-size: 20px;
+    --legend-20-text-2px-font-style: normal;
+    --legend-20-text-2px-font-weight: 400;
+    --legend-20-text-2px-letter-spacing: 2px;
+    --legend-20-text-2px-line-height: 100%;
+    --legend-20-text-font-family: "Legend", Helvetica;
+    --legend-20-text-font-size: 20px;
+    --legend-20-text-font-style: normal;
+    --legend-20-text-font-weight: 400;
+    --legend-20-text-letter-spacing: 0px;
+    --legend-20-text-line-height: normal;
+    --legend-24-text-font-family: "Legend", Helvetica;
+    --legend-24-text-font-size: 24px;
+    --legend-24-text-font-style: normal;
+    --legend-24-text-font-weight: 400;
+    --legend-24-text-letter-spacing: 2px;
+    --legend-24-text-line-height: normal;
+    --legend-44-text-font-family: "Legend", Helvetica;
+    --legend-44-text-font-size: 44px;
+    --legend-44-text-font-style: normal;
+    --legend-44-text-font-weight: 400;
+    --legend-44-text-letter-spacing: 4px;
+    --legend-44-text-line-height: normal;
+    --legend-70-text-font-family: "Legend", Helvetica;
+    --legend-70-text-font-size: 70px;
+    --legend-70-text-font-style: normal;
+    --legend-70-text-font-weight: 400;
+    --legend-70-text-letter-spacing: 1px;
+    --legend-70-text-line-height: 129.99999523162842%;
+    --neutralsdove-gray-gray-3: rgba(115, 115, 115, 1);
+    --neutralsmine-shaft-gray-1: rgba(47, 47, 47, 1);
+    --neutralssilver-chalice-gray-4: rgba(157, 157, 157, 1);
+    --neutralstundora-gray-2: rgba(70, 70, 70, 1);
+    --others-12-reg-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-12-reg-ALL-CAPS-font-size: 12px;
+    --others-12-reg-ALL-CAPS-font-style: normal;
+    --others-12-reg-ALL-CAPS-font-weight: 400;
+    --others-12-reg-ALL-CAPS-letter-spacing: 2px;
+    --others-12-reg-ALL-CAPS-line-height: normal;
+    --others-14-book-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-14-book-ALL-CAPS-font-size: 14px;
+    --others-14-book-ALL-CAPS-font-style: normal;
+    --others-14-book-ALL-CAPS-font-weight: 400;
+    --others-14-book-ALL-CAPS-letter-spacing: 0px;
+    --others-14-book-ALL-CAPS-line-height: 100%;
+    --others-16-book-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-16-book-ALL-CAPS-font-size: 16px;
+    --others-16-book-ALL-CAPS-font-style: normal;
+    --others-16-book-ALL-CAPS-font-weight: 400;
+    --others-16-book-ALL-CAPS-letter-spacing: 0.8px;
+    --others-16-book-ALL-CAPS-line-height: normal;
+    --others-16-reg-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-16-reg-ALL-CAPS-font-size: 16px;
+    --others-16-reg-ALL-CAPS-font-style: normal;
+    --others-16-reg-ALL-CAPS-font-weight: 400;
+    --others-16-reg-ALL-CAPS-letter-spacing: 2px;
+    --others-16-reg-ALL-CAPS-line-height: 100%;
+    --others-18-book-APP-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-18-book-APP-CAPS-font-size: 18px;
+    --others-18-book-APP-CAPS-font-style: normal;
+    --others-18-book-APP-CAPS-font-weight: 400;
+    --others-18-book-APP-CAPS-letter-spacing: 0px;
+    --others-18-book-APP-CAPS-line-height: 150%;
+    --others-18-reg-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-18-reg-ALL-CAPS-font-size: 18px;
+    --others-18-reg-ALL-CAPS-font-style: normal;
+    --others-18-reg-ALL-CAPS-font-weight: 400;
+    --others-18-reg-ALL-CAPS-letter-spacing: 2px;
+    --others-18-reg-ALL-CAPS-line-height: 150%;
+    --others-28-reg-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-28-reg-ALL-CAPS-font-size: 28px;
+    --others-28-reg-ALL-CAPS-font-style: normal;
+    --others-28-reg-ALL-CAPS-font-weight: 400;
+    --others-28-reg-ALL-CAPS-letter-spacing: 0px;
+    --others-28-reg-ALL-CAPS-line-height: 150%;
+    --others-32-book-ALL-CAPS-font-family: "SVN-Gotham", Helvetica;
+    --others-32-book-ALL-CAPS-font-size: 32px;
+    --others-32-book-ALL-CAPS-font-style: normal;
+    --others-32-book-ALL-CAPS-font-weight: 400;
+    --others-32-book-ALL-CAPS-letter-spacing: 0px;
+    --others-32-book-ALL-CAPS-line-height: 30px;
+    --others-40-text-ALL-CAPS-font-family: "Legend", Helvetica;
+    --others-40-text-ALL-CAPS-font-size: 40px;
+    --others-40-text-ALL-CAPS-font-style: normal;
+    --others-40-text-ALL-CAPS-font-weight: 400;
+    --others-40-text-ALL-CAPS-HERO-font-family: "Legend", Helvetica;
+    --others-40-text-ALL-CAPS-HERO-font-size: 40px;
+    --others-40-text-ALL-CAPS-HERO-font-style: normal;
+    --others-40-text-ALL-CAPS-HERO-font-weight: 400;
+    --others-40-text-ALL-CAPS-HERO-letter-spacing: 1px;
+    --others-40-text-ALL-CAPS-HERO-line-height: 150%;
+    --others-40-text-ALL-CAPS-letter-spacing: 2px;
+    --others-40-text-ALL-CAPS-line-height: 100%;
+    --primary-driftwood: rgba(161, 136, 72, 1);
+    --secondarynapal: rgba(174, 165, 152, 1);
+    --secondarysandal: rgba(166, 142, 103, 1);
+    --secondaryshingle-fawn: rgba(105, 79, 52, 1);
+    --secondaryxanadu: rgba(121, 132, 120, 1);
+    --secondary-sandal: #A68E67;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 47.4% 11.2%;
+
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 47.4% 11.2%;
+
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+
+        --card: transparent;
+        --card-foreground: 222.2 47.4% 11.2%;
+
+        --primary: 222.2 47.4% 11.2%;
+        --primary-foreground: 210 40% 98%;
+
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        --destructive: 0 100% 50%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 215 20.2% 65.1%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 224 71% 4%;
+        --foreground: 213 31% 91%;
+
+        --muted: 223 47% 11%;
+        --muted-foreground: 215.4 16.3% 56.9%;
+
+        --accent: 216 34% 17%;
+        --accent-foreground: 210 40% 98%;
+
+        --popover: 224 71% 4%;
+        --popover-foreground: 215 20.2% 65.1%;
+
+        --border: 216 34% 17%;
+        --input: 216 34% 17%;
+
+        --card: transparent;
+        --card-foreground: 213 31% 91%;
+
+        --primary: 210 40% 98%;
+        --primary-foreground: 222.2 47.4% 1.2%;
+
+        --secondary: 222.2 47.4% 11.2%;
+        --secondary-foreground: 210 40% 98%;
+
+        --destructive: 0 63% 31%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 216 34% 17%;
+
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+}
