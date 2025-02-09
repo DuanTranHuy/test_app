@@ -26,7 +26,7 @@ export function CarouselSize() {
                   src="/Image.png"
                   alt="Mooncake Banner"
                   fill
-                  className="object-fit"
+                  className="object-cover"
                   priority={index === 0}
                 />
                 <div className="absolute inset-0 left-[260px] flex items-center">
