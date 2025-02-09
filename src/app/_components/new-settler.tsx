@@ -30,7 +30,7 @@ export default function NewsletterModal() {
                 className="object-cover"
               />
             </div>
-            <div className=" bg-[#B5A36A] max-w-[438px] p-10 text-white">
+            <div className=" bg-primary-driftwood max-w-[438px] p-10 text-white">
               <button
                 onClick={() => setIsVisible(false)}
                 className="absolute right-2 top-2 rounded-full bg-white/10 p-1.5 opacity-70 ring-offset-background transition-opacity hover:bg-white/20 hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2"
