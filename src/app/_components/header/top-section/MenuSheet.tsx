@@ -55,7 +55,7 @@ export function MenuSheet() {
             <div className="flex flex-col gap-3">
               <p className="gotham-14-menu">Metropole Hanoi introduces special mooncake flavors ahead of 2021</p>
               <p className="gotham-14-menu">Top 5 recommendations for Hanoi must indulgent spa</p>
-              <p className="gotham-14-menu">An inside guide to Hanoi's best wine bars</p>
+              <p className="gotham-14-menu">An inside guide to Hanoi`&apos;`s best wine bars</p>
               <p className="gotham-14-menu">Metropole hanoi introduces new takeaway and food delivery services</p>
             </div>
             <button className="gotham-16-button">VIEW MORE</button>

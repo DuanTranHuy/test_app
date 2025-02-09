@@ -9,7 +9,7 @@ export default function ProductShowcase() {
         <h1 className="legend-36 mb-4">OUR SIGNATURE PRODUCTS</h1>
         <p className="text-neutralsdove-gray-gray-3 mx-auto max-w-[926px] text-center font-['SVN-Gotham'] text-[18px] font-normal leading-[150%]">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          industry. Lorem Ipsum has been the industry`&apos;`s standard dummy text ever
         </p>
       </div>
 

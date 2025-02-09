@@ -85,7 +85,7 @@ export default function BestSeller() {
         <h1 className="legend-36 mb-4">Best Seller Product</h1>
         <p className="text-neutralsdove-gray-gray-3 text-center font-['SVN-Gotham'] text-[18px] font-normal leading-[150%] max-w-2xl mx-auto mb-12">
           Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since 1500s.
+          industry`&apos;`s standard dummy text ever since 1500s.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
