@@ -65,7 +65,7 @@ export default function NewsletterModal() {
                 </div>
 
                 <p className="text-[10px] text-white/70">
-                  By clicking on `&apos;`Subscribe`&apos;`, I have read and accept Privacy Policy and Terms of Service.
+                  By clicking on &apos;Subscribe&apos;, I have read and accept Privacy Policy and Terms of Service.
                 </p>
               </div>
             </div>
