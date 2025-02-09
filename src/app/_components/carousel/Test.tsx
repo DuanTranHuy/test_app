@@ -10,6 +10,7 @@ import {
   CustomCarouselNext,
   CustomCarouselPrevious,
   CustomCarouselDots,
+  CustomCarouselScrollDown,
 } from "./CustomCarousel"
 import Autoplay from "embla-carousel-autoplay"
 
@@ -36,6 +37,8 @@ export function CarouselSize() {
       <CustomCarouselPrevious />
       <CustomCarouselNext />
       <CustomCarouselDots vertical />
+      <CustomCarouselScrollDown />
+
     </CustomCarousel>
   )
 }

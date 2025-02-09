@@ -6,6 +6,7 @@ import Header from "./_components/header";
 import { CarouselSize } from "./_components/carousel/Test";
 import ProductShowcase from "./_components/product-show-case";
 import { FoodCarousel } from "./_components/food-carousel";
+import BestSeller from "./_components/product-list";
 export default async function Home() {
 
   return (
@@ -13,6 +14,7 @@ export default async function Home() {
         <Header />
         <CarouselSize />
         <ProductShowcase />
+        <BestSeller />
         {/* <FoodCarousel /> */}
     </HydrateClient>
   );
